@@ -1,8 +1,6 @@
 import kotlin.system.exitProcess
 
 fun main() {
-    println("Hello, Kotlin/Native! How are you?")
-
     val consoleManager = ConsoleManager()
     consoleManager.addCommand(object : Command() {
         override val commandName = "echo"

@@ -1,9 +1,7 @@
-import platform.windows.TRUE
-
-class ConsoleManager {
+class ConsoleManager() {
     var commands = mutableListOf<Command>()
 
-    constructor() {
+    init {
         addCommand(object : Command() {
             override val commandName = "help"
             override val description = "Prints the available commands"
